@@ -1,0 +1,203 @@
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+#header {
+	/*border: 3px solid blue;*/
+
+	background-color: rgba(255, 184, 77, 0.18);
+
+	padding-top: 2%;
+}
+
+#firstName {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 1.2em;
+	color: #ffb84d;
+
+	padding-top: 50%;
+	padding-left: 46%;
+}
+
+#lastName {
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 1.2em;
+	color: #ffb84d;
+	
+	padding-left: 1%;
+}
+
+.links { 
+	text-align: center;
+	/*text-transform: uppercase;*/
+ }
+
+ #padMe {
+ 	padding-left:1%;
+ 	padding-right:1%
+ }
+
+ #currentPage {
+ 	color: coral;
+ }
+
+/* -----------body----------- */
+body {
+	background-color: #FFFFFF;
+	margin:auto auto;
+}
+
+	hr {
+		border-width:0.5px;
+	}
+
+	img {
+		opacity:0;  /* make things invisible upon start */
+		-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+		-moz-animation:fadeIn ease-in 1;
+		animation:fadeIn ease-in 1;
+
+		-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+		-moz-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+		-webkit-animation-duration:0.5s;
+		-moz-animation-duration:0.5s;
+		animation-duration:0.5s;
+
+
+		width: 30%;
+		height: 30%;
+		float: right;
+
+		margin-right: 13%;
+		padding: 3%;
+
+		/*border: 1px solid gold;*/
+	}
+
+	#name {
+		font-size: 2.2em;
+		font-style: oblique;
+		color: #333333;
+		margin-left: 13%;
+		margin-top: 6%;
+	}
+
+	#teaGreeting {
+		font-family: avantgarde;
+		font-size: 2.2em;
+		padding: 0.5%;
+		text-align: center;
+
+		font-style: oblique;
+		font-weight: 100;
+		color: #333333;
+	}
+
+	#description {
+		font-family: 'Inconsolata', monospace;
+		font-size: 100%;
+		color: #333333;
+		width: 30%;
+		/*border: 3px solid blue;*/
+
+		line-height: 2;
+
+		margin-left: 13%;
+		margin-top: 3%;
+	}
+
+	#description a {
+		opacity:0;  /* make things invisible upon start */
+		-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+		-moz-animation:fadeIn ease-in 1;
+		animation:fadeIn ease-in 1;
+
+		-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+		-moz-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+		-webkit-animation-duration:1s;
+		-moz-animation-duration:1s;
+		animation-duration:1s;
+
+		color: #ff9900;
+	}
+
+	#resumeLink:hover {
+		color: black;
+	}
+
+/* -----------footer----------- */
+#footer {
+	font-family: 'Inconsolata', monospace;
+	color: #333333;
+	text-align: center;
+
+	padding: 2.5%;
+
+	margin-top: 15%;
+
+	border-top: 1px solid #cccccc;
+}
+
+.buttons {
+	padding-top: 1%
+	padding-bottom: 1%;
+}
+
+	#mailIcon {
+		border: 1px solid darkgray;
+		border-radius: 25%;
+		box-shadow: 0px 0px 2px darkgray;
+		padding: 0.5em 0.6em;
+	}
+	#mailIcon:hover {
+		border-color: coral;
+		box-shadow: 0px 0px 2px coral;
+	}
+
+	#socialIcon {
+		border: 1px solid darkgray;
+		border-radius: 25%;
+		box-shadow: 0px 0px 2px darkgray;
+		padding: 0.5em 0.6em;
+	}
+	#socialIcon:hover {
+		border-color: coral;
+		box-shadow: 0px 0px 2px coral;
+	}
+
+	#gitIcon {
+		border: 1px solid darkgray;
+		border-radius: 25%;
+		box-shadow: 0px 0px 2px darkgray;
+		padding: 0.5em 0.6em;
+	}
+	#gitIcon:hover {
+		border-color: coral;
+		box-shadow: 0px 0px 2px coral;
+	}
+
+
+
+/* -----------links----------- */
+a {
+	font-family: 'Inconsolata', monospace;
+	font-size: 1em;
+
+	text-decoration: none;
+	color: darkgray;
+}
+
+a:hover {
+	color: coral;
+}
+
+a:active {
+	color: darkgray;
+}
