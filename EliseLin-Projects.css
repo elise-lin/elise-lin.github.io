@@ -62,8 +62,18 @@ body {
 		margin-top: 40px;
 	}
 
+	.title {
+		color: coral;
+	}
+
+	.title:hover {
+		color: darkgray;
+	}
+
 	.indent {
-		padding-left: 5%;
+		margin-left: 3%;
+		padding-left: 2%;
+		border-left: 5px solid #ffe6b3;
 	}
 
 	#projectsBody {
@@ -104,7 +114,7 @@ body {
 		-moz-animation-duration:1.5s;
 		animation-duration:1.5s;
 
-		background-color: rgba(255, 184, 77, 0.18);
+		background-color: #cccccc;
 		border-radius: 10px;
 
 	}
