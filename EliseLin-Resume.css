@@ -1,28 +1,26 @@
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
 #header {
 	/*border: 3px solid blue;*/
 
 	background-color: rgba(255, 184, 77, 0.18);
 
-	padding-top: 2%;
+	padding-top: 0.6%;
 }
 
 #firstName {
 	font-family: 'Roboto Condensed', sans-serif;
 	text-transform: uppercase;
+	text-align: center;
 	font-weight: 100;
 	font-size: 1.2em;
 	color: #ffb84d;
-
-	padding-top: 50%;
-	padding-left: 46%;
 }
 
 #lastName {
-	text-align: center;
 	font-family: 'Roboto Condensed', sans-serif;
 	text-transform: uppercase;
 	font-weight: 100;
-	font-size: 1.2em;
 	color: #ffb84d;
 	
 	padding-left: 1%;
@@ -49,6 +47,21 @@ body {
 }
 	hr {
 		border-width:0.5px;
+	}
+
+	#embodiment {
+		opacity:0;  /* make things invisible upon start */
+		-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+		-moz-animation:fadeIn ease-in 1;
+		animation:fadeIn ease-in 1;
+
+		-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+		-moz-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+		-webkit-animation-duration:0.5s;
+		-moz-animation-duration:0.5s;
+		animation-duration:0.5s;
 	}
 
 	#name {
@@ -81,8 +94,24 @@ body {
 	}
 
 	iframe {
+		opacity:0;  /* make things invisible upon start */
+		-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+		-moz-animation:fadeIn ease-in 1;
+		animation:fadeIn ease-in 1;
+
+		-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+		-moz-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+		-webkit-animation-duration:1.5s;
+		-moz-animation-duration:1.5s;
+		animation-duration:1.5s;
+
 		border-radius: 10px;
 		border: 1px solid #ffb84d;
+
+		max-width: 100%;
+		position: relative;
 	}
 	
 
@@ -95,7 +124,7 @@ body {
 
 	padding: 2.5%;
 
-	margin-top: 15%;
+	margin-top: 7%;
 
 	border-top: 1px solid #cccccc;
 }

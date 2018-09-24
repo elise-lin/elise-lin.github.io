@@ -4,8 +4,9 @@
 <head>
 	<title>Elise Lin - Projects</title>
     <link rel="stylesheet" type="text/css" href="EliseLin-Projects.css">
+    <script type = "text/javascript" src="EliseLin-Projects.js"></script>
     <!-- Favicon -->
-    <link rel="favicon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:200|Raleway|Roboto+Condensed|Inconsolata" rel="stylesheet">
     <!-- Icons -->
@@ -14,8 +15,7 @@
 
 <body> 
 	<div id="header"> 
-        <span id="firstName"> E l i s e </span>
-        <span id="lastName"> L i n </span>
+        <p id="firstName"> E l i s e <span id="lastName"> L i n </span> </p>
 
         <p class="links">
             <a href = "index.html">#About</a>
@@ -24,22 +24,47 @@
         </p>
         <hr>
     </div>
-    
-    <p id="name"> #Projects </p>
 
     <div id="projectsBody">
-    	<p class="bodyTitle"> Hackathon </p>
       <!-- Change Link -->
-      <div id="Citrus Hack">
-        <a href = "https://github.com/elise-lin/CitrusHack2018">Citrus Hack</a>
-         <!-- Insert gallery code -->
-        <div> 
-          <img src = "cutieHack1.jpg">
-          <img src = "cutieHack2.jpg">  
-          <img src = "cutieHack3.jpg"> 
-        </div> 
+      <div id="CitrusHack">
+        <a href = "https://github.com/elise-lin/CitrusHack2018" target="_blank" title="Github Repo" >iSpy at Citrus Hack 2018</a>
+
+        <div class="indent">
+          <p class="description"> Languages: HTML and CSS </p>
+          <p class="description"> Users can play an I-Spy game with 4 levels of increasing difficulty. There is a progress bar at the top tracking the percentage of the game completed, along with an increasing amount of hidden links in each level that will lead you to a game over page. Made with my partner, Carson Welty. </p>
+          
+          <div class="gallery">
+
+            <div class="row">
+              <div class="column">
+                <img src="cutieHack1.jpg" onclick="openImg(this);">
+              </div>
+              <div class="column">
+                <img src="cutieHack2.jpg" onclick="openImg(this);">
+              </div>
+              <div class="column">
+                <img src="cutieHack3.jpg" onclick="openImg(this);">
+              </div>
+            </div>
+
+            <!-- The expanding image container -->
+            <div class="container">
+              <!-- Close the image -->
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+              <!-- Expanded image -->
+              <img id="expandedImg" style="width:90%; height:90%;border-radius:10px; padding:50px">
+
+              <!-- Image text -->
+              <div id="imgtext"></div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
+      <p id="name"> More to come... </p>
     	<!-- <p class="bodyTitle"> Data Structures and Algorithms </p> -->
 
    	</div>

@@ -5,26 +5,24 @@
 
 	background-color: rgba(255, 184, 77, 0.18);
 
-	padding-top: 2%;
+	padding-top: 0.6%;
 }
 
 #firstName {
 	font-family: 'Roboto Condensed', sans-serif;
 	text-transform: uppercase;
+	text-align: center;
 	font-weight: 100;
 	font-size: 1.2em;
 	color: #ffb84d;
 
-	padding-top: 50%;
-	padding-left: 46%;
+	padding-top:0;
 }
 
 #lastName {
-	text-align: center;
 	font-family: 'Roboto Condensed', sans-serif;
 	text-transform: uppercase;
 	font-weight: 100;
-	font-size: 1.2em;
 	color: #ffb84d;
 	
 	padding-left: 1%;
@@ -32,7 +30,6 @@
 
 .links { 
 	text-align: center;
-	/*text-transform: uppercase;*/
  }
 
  #padMe {
@@ -54,7 +51,7 @@ body {
 		border-width:0.5px;
 	}
 
-	img {
+	.fadeFirst {
 		opacity:0;  /* make things invisible upon start */
 		-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
 		-moz-animation:fadeIn ease-in 1;
@@ -67,16 +64,30 @@ body {
 		-webkit-animation-duration:0.5s;
 		-moz-animation-duration:0.5s;
 		animation-duration:0.5s;
+	}
 
+	.fadeSecond {
+		opacity:0;  /* make things invisible upon start */
+		-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+		-moz-animation:fadeIn ease-in 1;
+		animation:fadeIn ease-in 1;
 
+		-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+		-moz-animation-fill-mode:forwards;
+		animation-fill-mode:forwards;
+
+		-webkit-animation-duration:1.5s;
+		-moz-animation-duration:1.5s;
+		animation-duration:1.5s;
+	}
+
+	img {
 		width: 30%;
 		height: 30%;
 		float: right;
 
 		margin-right: 13%;
 		padding: 3%;
-
-		/*border: 1px solid gold;*/
 	}
 
 	#name {
@@ -112,19 +123,6 @@ body {
 	}
 
 	#description a {
-		opacity:0;  /* make things invisible upon start */
-		-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-		-moz-animation:fadeIn ease-in 1;
-		animation:fadeIn ease-in 1;
-
-		-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-		-moz-animation-fill-mode:forwards;
-		animation-fill-mode:forwards;
-
-		-webkit-animation-duration:1s;
-		-moz-animation-duration:1s;
-		animation-duration:1s;
-
 		color: #ff9900;
 	}
 
