@@ -6,6 +6,7 @@
 	background-color: rgba(255, 184, 77, 0.18);
 
 	padding-top: 0.6%;
+	border-bottom: 1px solid #cccccc;
 }
 
 #firstName {
@@ -45,10 +46,7 @@ body {
 	background-color: #FFFFFF;
 	margin:auto auto;
 }
-	hr {
-		border-width:0.5px;
-	}
-
+	
 	#name {
 		
 		font-size: 33px;
@@ -93,6 +91,7 @@ body {
 
 		margin-left: 13%;
 		margin-right: 13%;
+		margin-top: 5%;
 	}
 
 	.description {

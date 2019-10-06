@@ -22,10 +22,56 @@
             <a id="padMe" href = "EliseLin-Projects.html">#Projects</a>
             <a href = "EliseLin-Resume.html">#Resume</a>
         </p>
-        <hr>
     </div>
 
     <div id="projectsBody">
+
+        <!-- FireWatch -->
+		<div id="FireWatch">
+		    <a class="title" href = "https://github.com/cwelty/FireWatch" target="_blank" title="Github Repo" >FireWatch at HackUCI 2019</a>
+
+		    <div class="indent">
+			    <p class="description"> Languages: Python, HTML, and CSS </p>
+			    <p class="description"> With the recent rise of wildfires disrupting wildlife, evacuating thousands of families and impacting many more, our team was inspired to create the next wildfire forecasting tool, FireWatch. Using metrics and predictive analysis, FireWatch displays possible future California wildfires onto a Google Maps API using Machine Learning with our mascot Disel the Dog!
+
+				<p class="description"> Our process (with 4 team members and 36 hours): </p>
+
+			    <p class="description"> [Data] Extract relevant data (wildfire history, altitude, vegetation, and precipitation patterns) from the CalFire Database and use Python scripts to parse data for model training. </p>
+			    <p class="description">[Backend] Host a Flask server with Python, which takes care of Machine Learning calculations and handling SendGrid email requests. </p>
+			    <p class="description">[Frontend] Create a user-friendly interface using HTML, CSS, and Javascript. We made sure that users who used our service would be able to find information easily and seamlessly all while enjoying a beautiful user experience. We provided a form to allow users to register for email alerts if a high chance of fire is in their area. </p>
+		      
+			    <div class="gallery">
+
+			        <div class="row">
+			        	<div class="column">
+			        		<img src="FireWatch1.jpg" onclick="openImg(this);">
+			            </div>
+			            <div class="column">
+			            	<img src="FireWatch2.jpg" onclick="openImg(this);">
+			            </div>
+			          	<div class="column">
+			            	<img src="FireWatch3.jpg" onclick="openImg(this);">
+			          	</div>
+			           	<div class="column">
+			            	<img src="FireWatch4.png" onclick="openImg(this);">
+			          	</div>
+			        </div>
+
+			        <!-- The expanding image container -->
+			        <div class="container">
+			          <!-- Close the image -->
+			          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+			          <!-- Expanded image -->
+			          <img id="expandedImg" style="width:90%; height:90%;border-radius:10px; padding:50px">
+
+			          <!-- Image text -->
+			          <div id="imgtext"></div>
+			        </div>
+	    		</div>
+	    	</div>
+	    </div>
+
       <!-- Change Link -->
       <div id="CitrusHack">
         <a class="title" href = "https://github.com/elise-lin/CitrusHack2018" target="_blank" title="Github Repo" >iSpy at Citrus Hack 2018</a>
@@ -60,6 +106,8 @@
               <div id="imgtext"></div>
             </div>
           </div>
+
+
 
         </div>
       </div>
