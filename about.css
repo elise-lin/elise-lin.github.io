@@ -1,4 +1,14 @@
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+/* text animation */
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 125px;}
+}
+/* cursor animations */
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
 
 header {
 	padding-top: 3%;
@@ -56,6 +66,15 @@ body {
 		text-decoration: none;
 		font-family: 'Open Sans', sans-serif;
 		color: coral;
+	}
+
+	.animated {
+		border-right: solid 3px rgba(0,255,0,.75);
+		  white-space: nowrap;
+		  overflow: hidden;    
+		  color: black;
+
+		animation: animated-text 0.5s steps(11,end) 1s 1 normal both, animated-cursor 1000ms steps(11,end) infinite;
 	}
 
 	#title {
