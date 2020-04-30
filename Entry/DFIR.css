@@ -61,6 +61,7 @@ body {
 		margin-bottom: 5%;
 		margin-left: 30%;
 		margin-right: 25%;
+		color: #4e4e4f;
 	}
 
 	#body a {
@@ -75,12 +76,22 @@ body {
 		margin-top: 7%;
 		font-family: 'Roboto Mono', monospace;
 		font-size: 1.2em;
+		color: black;
 	}
 
 	#date {
 		font-family: 'Roboto Mono', monospace;
 		color: grey;
 		font-size: 0.8em;
+	}
+
+	.subtext {
+		border-left: 1px solid black;
+		padding-left: 1em;
+	}
+
+	#text {
+		font-family: 'Open Sans', sans-serif;
 	}
 
 	#body a:hover {
